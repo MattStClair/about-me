@@ -1,0 +1,29 @@
+h1{color: blue;
+
+  }
+
+body{border: 3px solid black;}
+
+.personal{
+
+          border: 1px solid blue;
+          width: 200px;
+        }
+.activities{
+
+            border: 1px solid green;
+            width: 200px;
+              }
+
+.professional{
+
+              border: 1px solid red;
+              width:200px;
+
+              }
+.extra {
+
+        border: 1px solid green;
+        width: 200px;
+
+        }
