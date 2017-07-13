@@ -79,6 +79,37 @@ else
   console.log('user answered '+ answer5 + ' as to whether I like coding');
 }
 
+//------------------------------------------teacher answer6
+//
+// var guessesLeft = 4; //amount user has
+//
+// while(guessesLeft > 0) //if they have more than zero, keep looping
+// {
+//     var secretNumber = 8;
+//     var answer = parseInt(prompt('gimme number'));
+//
+//     if(answer === secretNumber)
+//       {
+//         alert('you got it!');
+//         guessesLeft = -1; //counted down in order to alert user of guessesLeft
+//       }
+//       else if(answer>secretNumber)
+//       {
+//         alert('too high');
+//         guessesLeft --;
+//       }
+//       else if(answer < secretNumber)
+//       {
+//         alert('too low');
+//         guessesLeft --;
+//       }
+//       if(guessesLeft===0)
+//       {
+//         alert('out of guesses');
+//         guessesLeft = -1;
+//       }
+//
+// }
 //-------------------question 6--------------------------
 
 var counter = 4;
@@ -102,6 +133,34 @@ while (counter > 0)
     counter -= 1;
   }
 }
+
+
+
+///teacher number seven
+// var state = ['tennessee', 'new york'];
+// var stateGuesses = 6; //counter max
+//
+// var stateAnswer = prompt("name state").toLowerCase();
+// while(stateGuesses > 0) {
+//
+//       stateGuesses --; /// already beginning the counter
+//       for (var i = 0; i < state.length; i++) {
+//         if(stateAnswer === states[i])
+//           {
+//             alert("you got it right!");
+//             stateGuesses = -1;
+//           }
+//         if (stateGuesses > 0){
+//
+//           alert("keep trying!");
+//         }
+//         if(stateGuesses === 0)
+//         {
+//           alert("you are done brother!");
+//         }
+//       }
+// }
+
 //---seven---------------
 var states = ['MONTANA', 'CALIFORNIA'];
 
@@ -130,8 +189,5 @@ while (stateGuessCounter < 6)
 
               }
             }
-
-
-
 
 alert(userName + ' , you answered: ' + correct.length + ' correct out of 7!');
