@@ -1,10 +1,11 @@
 'use strict';
 
 
-var correct = ['starter'];
+var correct = [];
 
-var amtCorrect = correct.length;
 var userName = prompt('enter your name');
+
+function questionOneThroughFive(){
 
 var answer1 = prompt('Do I like dogs?').toUpperCase();
 if (answer1 === 'YES' || answer1 === 'Y')
@@ -17,7 +18,7 @@ else
   alert('you answered incorrect')
 }
 
-console.log('user answered '+answer1+ ' as to whether I like dogs');
+console.log('user answered '+ answer1 + ' as to whether I like dogs');
 
 
 //---question 2 ------------------
@@ -78,6 +79,9 @@ else
   alert('you answered incorrect')
   console.log('user answered '+ answer5 + ' as to whether I like coding');
 }
+}
+
+questionOneThroughFive();
 
 //------------------------------------------teacher answer6
 //
@@ -112,6 +116,8 @@ else
 // }
 //-------------------question 6--------------------------
 
+function questionSix(){
+
 var counter = 4;
 while (counter > 0)
 {
@@ -133,7 +139,9 @@ while (counter > 0)
     counter -= 1;
   }
 }
+}
 
+questionSix();
 
 
 ///teacher number seven
@@ -162,32 +170,38 @@ while (counter > 0)
 // }
 
 //---seven---------------
+
+function questionSeven(){
+
 var states = ['MONTANA', 'CALIFORNIA'];
 
-var stateGuessCounter = 1;
+var stateGuessCounter = 0;
 while (stateGuessCounter < 6)
 {
-    var answer7 = prompt('Guess a state I have lived in besides WA?').toUpperCase();
+  var answer7 = prompt('Guess a state I have lived in besides WA?').toUpperCase();
 
-        for (var possibleAnswer = 0; possibleAnswer < 2; possibleAnswer++)
-              {
-                if (answer7 === states[0] || answer7 === states [1])
-                {
-                  alert('You answered correctly! I have lived in ' + answer7);
-                  correct.push('yesState');
-                  console.log('user answered '+ answer7 + ' for states');
-                  stateGuessCounter +=6;
-                  break;
-                }
-                else
-                {
-                  alert('you answered incorrect');
-                  console.log('user answered '+ answer7 + ' for states');
-                  stateGuessCounter++;
-                  break;
-                }
+  for (var possibleAnswer = 0; possibleAnswer < 2; possibleAnswer++)
+  {
+    if (answer7 === states[0] || answer7 === states [1])
+    {
+      alert('You answered correctly! I have lived in ' + answer7);
+      correct.push('yesState');
+      console.log('user answered '+ answer7 + ' for states');
+      stateGuessCounter +=6;
+      break;
+    }
+    else
+    {
+      alert('you answered incorrect');
+      console.log('user answered '+ answer7 + ' for states');
+      stateGuessCounter++;
+      break;
+    }
 
-              }
-            }
+  }
+}
+}
+
+questionSeven();
 
 alert(userName + ' , you answered: ' + correct.length + ' correct out of 7!');
