@@ -4,11 +4,14 @@ h1{color: blue;
   border: 2px dashed grey;
   width: 600px;
   padding-left: auto;
-  padding-right: auto; 
+  padding-right: auto;
+  text-align: center;
 
 }
 
-body{border: 3px solid black;}
+body{border-top: : 3px solid black;
+     border-left: 3px solid black;
+   border-right: 3px solid black;}
 
 .personal{
 
@@ -47,3 +50,11 @@ body{border: 3px solid black;}
 
 
 }
+ ol li{
+   float: left;
+   margin: 0 10px;
+  padding: 0 10px;
+  font-size: 15px;
+  border: 4px dotted black; 
+
+ }
