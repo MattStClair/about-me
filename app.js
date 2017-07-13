@@ -4,6 +4,7 @@
 var correct = ['starter'];
 
 var amtCorrect = correct.length;
+var userName = prompt('enter your name');
 
 var answer1 = prompt('Do I like dogs?').toUpperCase();
 if (answer1 === 'YES' || answer1 === 'Y')
@@ -133,4 +134,4 @@ while (stateGuessCounter < 6)
 
 
 
-alert('you answered: ' + correct.length + ' correct out of 7!');
+alert(userName + ' , you answered: ' + correct.length + ' correct out of 7!');
