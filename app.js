@@ -191,3 +191,11 @@ while (stateGuessCounter < 6)
             }
 
 alert(userName + ' , you answered: ' + correct.length + ' correct out of 7!');
+
+
+
+function woo(){
+
+  alert('woo!!!');
+  console.log('wooo!')
+}

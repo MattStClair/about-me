@@ -1,13 +1,14 @@
 h1{color: blue;
   font-size: 30px;
-  margin: 0px auto;
+  margin-left: 450px;
+  margin-top: 5px;
   border: 2px groove black;
   width: 600px;
   padding-left: auto;
   padding-right: auto;
   text-align: center;
   background: white;
-
+  position: fixed;
 
 }
 
